@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
-            txvShow.setText("1輸入錯誤!\n帳號:A111221030\n密碼:OO171459" );
+            txvShow.setText("輸入錯誤!\n帳號:A111221030\n密碼:001459" );
         }
 
     }
