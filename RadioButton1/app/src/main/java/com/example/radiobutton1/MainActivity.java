@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 TextView output = (TextView) findViewById(R.id.lblOutput);
                 output.setText(outputStr);
 
+
+
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 intent.putExtra("user_choice", outputStr); // 传递用户的选择
                 startActivity(intent);
@@ -81,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 intent.putExtra("ticket_price", outputStr); // 传递计算的票价
                 startActivity(intent);
+
+
+
             }
         });
     }
