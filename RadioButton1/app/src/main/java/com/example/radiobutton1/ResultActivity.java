@@ -17,10 +17,10 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         // 获取MainActivity传递过来的用户选择和票价
-        String userChoice = intent.getStringExtra("user_choice");
+        String userChoice = intent.getStringExtra("ticketType");
         String ticketPrice = intent.getStringExtra("ticket_price");
-
+        String userChoices = intent.getStringExtra("gender");
         // 将用户选择和票价显示在TextView中
-        txvShow.setText("選擇:\n " + userChoice + "\n票價:\n " + ticketPrice);
+        txvShow.setText("選擇:\n " +  userChoices + " \n"+ userChoice + "\n票價:\n " + ticketPrice);
     }
 }
