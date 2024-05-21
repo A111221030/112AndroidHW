@@ -1,4 +1,4 @@
-package com.example.spinneradapter;
+package com.example.Menu_hw;
 
 import org.junit.Test;
 

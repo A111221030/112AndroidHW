@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.spinneradapter"
+    namespace = "com.example.Menu_hw"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.spinneradapter"
+        applicationId = "com.example.Menu_hw"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
