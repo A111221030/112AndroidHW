@@ -17,39 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        courses = getResources().getStringArray(R.array.courses);
-        dessert = getResources().getStringArray(R.array.dessert);
 
-        spCourses = (Spinner) findViewById(R.id.spinner);
-        spDessert = (Spinner) findViewById(R.id.spinner2);
-
-
-        ArrayAdapter<String> adpCourses = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item, courses);
-        ArrayAdapter<String> adpDessert = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_dropdown_item, dessert);
-
-        spCourses.setAdapter(adpCourses);
-        spDessert.setAdapter(adpDessert);
-
-        Button btnConfirm = (Button) findViewById(R.id.button);
-        btnConfirm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String course = spCourses.getSelectedItem().toString();
-                String dessert = spDessert.getSelectedItem().toString();
-                TextView output = (TextView) findViewById(R.id.lblOutput);
-                output.setText("主餐: " + course + "\n甜點: " + dessert);
-            }
-        });
-
-        Button btnModify = (Button) findViewById(R.id.btnModify);
-        btnModify.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                dessert[4] = "草莓蛋糕";
-                adpDessert.notifyDataSetChanged();
-            }
-        });
     }
 }
