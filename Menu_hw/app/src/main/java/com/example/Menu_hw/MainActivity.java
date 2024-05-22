@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.ToClear) {
             // 如果需要处理“菜單選擇”项的点击事件
-            txtMenu.setText("");
+            txtMenu.setText("主餐: 請選擇\n\n附餐: 請選擇\n\n飲料: 請選擇");
             return true;
         } else if (id == R.id.ToSend) {
             // 获取TextView的内容并启动新的Activity
